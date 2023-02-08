@@ -1,0 +1,32 @@
+input.ng-invalid.ng-touched{
+    border: 1.5px solid red;
+}
+.error{
+    color:red;
+}
+
+form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 500px;
+    margin: 10px auto;
+    width: 400px;
+}
+.inputitem{
+    display: flex;
+    justify-content: space-between;
+}
+.gap{
+    gap: 203px;
+}
+app-additional{
+    padding: 2px;
+    border: 2px solid;
+}
+.insidecomp{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
