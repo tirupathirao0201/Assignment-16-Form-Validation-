@@ -15,6 +15,7 @@ form{
     margin: 10px auto;
     width: 400px;
     background-color: #93BFCF;
+    padding: 15px;
 }
 .inputitem{
     display: block;
@@ -27,7 +28,7 @@ form{
     gap: 203px;
 }
 #age{
-    margin-left: 208px;
+    margin-left: 177px;
 }
 .buttons{
     display: flex;
