@@ -14,13 +14,35 @@ form{
     height: 500px;
     margin: 10px auto;
     width: 400px;
+    background-color: #93BFCF;
 }
 .inputitem{
+    display: block;
+}
+.inputitem > div{
     display: flex;
     justify-content: space-between;
 }
 .gap{
     gap: 203px;
+}
+#age{
+    margin-left: 208px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.buttons > input{
+    padding: 10px;
+    border-radius: 75px;
+    border: none;
+}
+input[type="submit"]{
+    background-color: #54B435;
+}
+input[type="reset"]{
+    background-color: red;
 }
 app-additional{
     padding: 2px;
