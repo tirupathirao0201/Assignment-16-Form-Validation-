@@ -4,7 +4,9 @@ input.ng-invalid.ng-touched{
 .error{
     color:red;
 }
-
+h2{
+    text-align: center;
+}
 form{
     display: flex;
     justify-content: space-evenly;
@@ -24,9 +26,10 @@ app-additional{
     padding: 2px;
     border: 2px solid;
 }
+
 .insidecomp{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    
+
 }

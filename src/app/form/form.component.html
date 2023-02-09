@@ -38,16 +38,15 @@
             <input type="text" id="additional" formControlName="additional" placeholder="Enter label for additional">
             <div class="error" *ngIf="! reactiveForm.get('additional').valid && reactiveForm.get('additional').touched">{{additionalError}}</div>
         </div>
-        <app-additional class="inputitem"></app-additional>
+        <app-additional class="inputitem" (additionalInput)="handleAdditionInput($event)" (showError)=isError($event)></app-additional>
+        <div class="error" *ngIf="typeMismatchError">Selected type & entered value are different</div>
         <div class="insidecomp">
             <div class="inputitem">
-                <label for="enteredadditionallabel">Entered Additional Label</label>
-                <input type="text"  id="enteredadditionallabel" >
+                <p id="enteredadditionallabel">Entered Additional Label: {{addiLabelValue}}</p>
 
             </div>
             <div class="inputitem">
-                <label for="enteredadditionalvalue">Entered Additional value</label>
-                <input type="text"  id="enteredadditionallabel" >
+                <p id="enteredadditionalvalue">Entered Additional value:{{addiValue}}</p>
             </div>
         </div>
         <div class="inputitem">
