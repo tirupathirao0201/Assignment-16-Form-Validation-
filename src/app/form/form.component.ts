@@ -31,14 +31,16 @@ export class FormComponent {
   constructor(private router: Router, private route: ActivatedRoute){}
   validateForm(){
     console.log("here");
-    
+    if (this.reactiveForm.status==="VALID" &&  !this.typeMismatchError){
     this.router.navigate(['display'], {relativeTo: this.route,state: { submittedData : this.reactiveForm.value, AdditionalValue : this.addiValue }})
     console.log(this.reactiveForm);
     console.log(this.reactiveForm.get('additional').value)
-    // if (this.reactiveForm.status==="VALID" &&  !this.typeMismatchError){
       this.addiLabelValue=this.reactiveForm.get('additional').value;
       this.finalSubmitData = this.reactiveForm.value; 
-    // }
+    }
+    else{
+      alert("Enter valid data")
+    }
 
   }
 

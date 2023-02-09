@@ -1,5 +1,5 @@
 <div class="child">
-<select id="additionaldropdown" #selectdrop>
+<select id="additionaldropdown" #selectdrop (change)="handleAdditionalValue(input,selectdrop)">
     <option value="number">Number</option>
     <option value="boolean">Boolean</option>
     <option value="colorcode">Color Code</option>
